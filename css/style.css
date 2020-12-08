@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap");
+:root {
+  --font-f:  'Roboto Slab', serif;
+  --font-s-lg: 18px;
+  --font-s-md: 13px;
+  --font-s-sm: 12px;
+  --font-title: 15px;
+  --font-w-regular: 400;
+  --font-w-medium: 500;
+  --font-w-bold: 700;
+  --cl-text: #f0f0f0;
+  --cl-hover: #fff;
+}
+
+* {
+  font-family: var(--font-f);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ol, ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.bg-grayscale {
+  background: #f5f5f5;
+}
+
+.bd-transparent {
+  background: transparent;
+}
+
+.text-animate {
+  color: #000;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.text-animate:hover {
+  color: var(--primary);
+}
+
+.main-title {
+  font-weight: 600;
+}
+
+.custom-scrollbar-js,
+.custom-scrollbar-css {
+  min-height: 200px;
+  max-height: 400px;
+}
+
+/* Custom Scrollbar using CSS */
+.custom-scrollbar-css {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+/* scrollbar width */
+.custom-scrollbar-css::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* scrollbar track */
+.custom-scrollbar-css::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* scrollbar handle */
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #262626;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#525252), to(#a0a0a0));
+  background-image: linear-gradient(to top, #525252 0%, #a0a0a0 100%);
+}
+
+.bd-none {
+  border: none;
+}
+
+div.card-text {
+  font-size: .9rem !important;
+}
+
+.cs-point {
+  cursor: pointer;
+}
+
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bdr-none {
+  border-radius: 0;
+}
+
+.bdr-3 {
+  border-radius: 3px;
+}
+
+.bdr-4 {
+  border-radius: 4px;
+}
+
+.bdr-5 {
+  border-radius: 5px;
+}
+
+.material-icons.md-13 {
+  font-size: var(--font-s-sm);
+}
+
+.material-icons.md-15 {
+  font-size: 15px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-32 {
+  font-size: 32px;
+}
+
+.material-icons.md-18 {
+  font-size: var(--font-s-lg);
+}
+
+.btn-outline-warning:hover {
+  color: #fff !important;
+}
+
+.btn-custom {
+  padding: 10px 20px;
+  background-color: transparent;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  color: #cd2122;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+.btn-custom:hover {
+  background-color: #cd2122;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  background-color: #191c51;
+}
+
+.header .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header a.logo {
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header a.logo img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header a.logo .content {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header a.logo .content .school {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.header .navbar ul li a.nav-link {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  color: #fff;
+}
+
+.header .navbar ul .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.header .navbar ul .dropdown > .dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.main-title {
+  font-size: 1.4rem !important;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+section.banner {
+  max-width: 3000px;
+}
+
+section.news .box {
+  overflow: hidden;
+}
+
+section.news .box .bot-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-x: scroll;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+section.news .box .bot-box .card {
+  margin-right: 40px;
+  max-width: 200px;
+  min-width: 110px;
+}
+
+section.news .box .bot-box .card-body {
+  padding: .25rem;
+}
+
+section.news .right-box {
+  width: 100%;
+}
+
+section.news .right-box ul {
+  padding: 0 15px !important;
+}
+
+section.news .right-box ul.custom-scrollbar-css {
+  max-height: 735px;
+}
+
+section.news .right-box ul li {
+  margin-bottom: 15px;
+}
+
+section.news .right-box ul li .item-box .title {
+  font-size: 1.05rem;
+}
+
+section.infomation {
+  margin-bottom: 40px;
+}
+
+section.infomation .card-body {
+  padding: .25rem !important;
+}
+
+section.infomation .card-body .card-title {
+  font-size: 1.1rem;
+}
+
+section.infomation .card-body .card-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+section.events .card {
+  background: transparent;
+}
+
+section.events .card a.card-title {
+  text-decoration: none;
+}
+
+section.events .card p.card-text {
+  margin-top: 0.75rem !important;
+}
+
+section.events .card-foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+section.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+section.footer ul {
+  padding-top: 10px !important;
+}
+
+section.footer ul li {
+  margin-bottom: 8px;
+}
+
+section.footer a.logo .fal {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+section.footer .title {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+section.copy-right {
+  background-color: #191c51;
+}
+
+section.copy-right .text-copy {
+  color: #00fff3;
+}
+/*# sourceMappingURL=style.css.map */
